@@ -7,13 +7,46 @@ public class Apprenez {
         int x = incomes + saving;
         System.out.println(x);
 
+        // *********************************************
+
         String prenomPersonne = "Mouhamed";
         String nomPersonne = "Diouf";
         System.out.println("mon nom est: " + nomPersonne + " et nom prénom est: " + prenomPersonne);
 
+        // *********************************************
+
         final int NUMEROFIXE = 7;
         final String mot = "mot fixe";
         System.err.println("voici un nombre et un mot qui ne changeront pas dans notre programme: " + NUMEROFIXE + " et " + mot );
+
+
+        // *********************************************
+
+        int count = 0;
+        for (int i = 0; i < prenomPersonne.length(); i++) {
+            count++;
+        }
+        System.out.println(count + " est le nombre de caractéres dans le nom");
+
+        // *********************************************
+
+        double nombreDouble = 14567.1234567890987655678904567843;
+        System.out.println(nombreDouble);
+
+        // *********************************************
+
+        int a = 5;
+        int b = 2;
+        int c = a / b;
+        int d = a % b;
+        double cc = (double)a / b;
+        System.out.println("c=" + c + "; cc=" + cc + "; d=" + d);
+
+        // *********************************************
+
+        // *********************************************
+
+        // *********************************************
 
     }
 

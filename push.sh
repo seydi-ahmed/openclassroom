@@ -1,6 +1,6 @@
 git add .
 git commit -m "
-Apprendre toutes les bases
+int et String
 "
 git push gitea
 git push github

@@ -1,6 +1,6 @@
 git add .
 git commit -m "
-int et String
+final
 "
 git push gitea
 git push github

@@ -1,6 +1,6 @@
 git add .
 git commit -m "
-fusion
+static et non-static
 "
 git push gitea
 git push github

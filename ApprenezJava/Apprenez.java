@@ -1,5 +1,9 @@
 public class Apprenez {
 
+    public static int addition (int a, int b) {
+        return a + b;
+    }
+
     public static void main(String[] args) {
         
         int incomes = 500;
@@ -40,6 +44,7 @@ public class Apprenez {
         int c = a / b;
         int d = a % b;
         double cc = (double)a / b;
+        System.out.println(addition(a, b));
         System.out.println("c=" + c + "; cc=" + cc + "; d=" + d);
 
         // *********************************************

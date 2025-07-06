@@ -1,6 +1,6 @@
 git add .
 git commit -m "
-boolean
+fusion
 "
 git push gitea
 git push github

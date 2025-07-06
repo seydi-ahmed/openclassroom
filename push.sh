@@ -1,6 +1,6 @@
 git add .
 git commit -m "
-manipulation
+boolean
 "
 git push gitea
 git push github

@@ -44,6 +44,14 @@ public class Apprenez {
 
         // *********************************************
 
+        boolean Deugeu;
+        if (a > b) {
+            Deugeu = true;
+        } else {
+            Deugeu = false;
+        }
+        System.out.println(Deugeu);
+
         // *********************************************
 
         // *********************************************

@@ -65,6 +65,11 @@ public class Apprenez {
         System.out.println(city);
 
         // *********************************************
+        
+        String exemple = "hello";
+        System.out.println(exemple.toUpperCase());
+        exemple = exemple.replace("hell", "Yeah");
+        System.out.println(exemple);
 
         // *********************************************
 

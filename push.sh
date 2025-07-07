@@ -1,6 +1,6 @@
 git add .
 git commit -m "
-static et non-static
+toUpperCase()
 "
 git push gitea
 git push github

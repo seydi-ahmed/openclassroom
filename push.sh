@@ -1,6 +1,6 @@
 git add .
 git commit -m "
-hashmap
+lire dans un fichier
 "
 git push gitea
 git push github

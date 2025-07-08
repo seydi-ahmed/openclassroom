@@ -1,3 +1,5 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -157,6 +159,21 @@ public class Apprenez {
         System.out.println();
         System.out.println("*********************************************");
         System.out.println();
+
+        try {
+            FileReader fileReader = new FileReader("../roadmap.md");
+            BufferedReader reader = new BufferedReader(fileReader);
+            String line = reader.readLine();
+
+            while (line != null) {
+                System.out.println(line);
+                line = reader.readLine();
+            }
+
+            reader.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         
 
     }

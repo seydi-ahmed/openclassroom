@@ -1,11 +1,20 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 public class Apprenez {
 
-    public static int addition (int a, int b) {
+    public static int addition(int a, int b) {
         return a + b;
     }
 
+    static void printEntry(Map.Entry entry) {
+        System.out.println(entry.getKey() + " --> " + entry.getValue());
+    }
+
     public static void main(String[] args) {
-        
+
         int incomes = 500;
         int saving = 1000;
         int x = incomes + saving;
@@ -25,8 +34,8 @@ public class Apprenez {
 
         final int NUMEROFIXE = 7;
         final String mot = "mot fixe";
-        System.err.println("voici un nombre et un mot qui ne changeront pas dans notre programme: " + NUMEROFIXE + " et " + mot );
-
+        System.err.println(
+                "voici un nombre et un mot qui ne changeront pas dans notre programme: " + NUMEROFIXE + " et " + mot);
 
         System.out.println();
         System.out.println("*********************************************");
@@ -53,7 +62,7 @@ public class Apprenez {
         int b = 2;
         int c = a / b;
         int d = a % b;
-        double cc = (double)a / b;
+        double cc = (double) a / b;
         System.out.println(addition(a, b));
         System.out.println("c=" + c + "; cc=" + cc + "; d=" + d);
 
@@ -81,7 +90,7 @@ public class Apprenez {
         System.out.println();
         System.out.println("*********************************************");
         System.out.println();
-        
+
         String exemple = "hello";
         System.out.println(exemple.toUpperCase());
         exemple = exemple.replace("hell", "Yeah");
@@ -103,7 +112,7 @@ public class Apprenez {
         Marque apple = new Marque("apple");
         System.out.println(apple.nom);
         Telephone iphone = new Telephone(124, "samsung", apple);
-        System.out.println(iphone.nom + " " + iphone.marque.nom + " " +  iphone.pixels);
+        System.out.println(iphone.nom + " " + iphone.marque.nom + " " + iphone.pixels);
 
         System.out.println();
         System.out.println("*********************************************");
@@ -119,10 +128,40 @@ public class Apprenez {
         System.out.println("*********************************************");
         System.out.println();
 
+        String[] prenoms = new String[10];
+        for (int i = 0; i < prenoms.length; i++) {
+            System.out.println(prenoms[i]);
+        }
+
+        System.out.println();
+        System.out.println("*********************************************");
+        System.out.println();
+
+        List<String> listesDeNoms = new ArrayList<String>();
+        listesDeNoms.add("Mamadou");
+        listesDeNoms.add("Mamadou");
+        System.out.println(listesDeNoms);
+
+        System.out.println();
+        System.out.println("*********************************************");
+        System.out.println();
+
+        Map<String, Integer> map = new HashMap<String, Integer>();
+
+        map.put("Jean", 34);
+
+        for(Map.Entry<String, Integer> entry : map.entrySet()) {
+            printEntry(entry);
+        }
+
+        System.out.println();
+        System.out.println("*********************************************");
+        System.out.println();
         
 
-
     }
+
+
 
 }
 
@@ -138,6 +177,7 @@ class Voiture extends Vehicule {
         super.start();
         allumer();
     }
+
     void allumer() {
         System.out.println("Allumage des feux");
     }
@@ -152,7 +192,7 @@ class Telephone {
     String nom;
     Marque marque;
 
-    public Telephone (int pixels, String nom, Marque marque) {
+    public Telephone(int pixels, String nom, Marque marque) {
         this.marque = marque;
         this.nom = nom;
         this.pixels = pixels;
@@ -162,7 +202,7 @@ class Telephone {
 class Marque {
     String nom;
 
-    public Marque (String nom) {
+    public Marque(String nom) {
         this.nom = nom;
     }
 }

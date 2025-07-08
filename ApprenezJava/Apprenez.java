@@ -105,7 +105,45 @@ public class Apprenez {
         Telephone iphone = new Telephone(124, "samsung", apple);
         System.out.println(iphone.nom + " " + iphone.marque.nom + " " +  iphone.pixels);
 
+        System.out.println();
+        System.out.println("*********************************************");
+        System.out.println();
+
+        Voiture voiture = new Voiture();
+        Bateau bateau = new Bateau();
+
+        voiture.start();
+        bateau.start();
+
+        System.out.println();
+        System.out.println("*********************************************");
+        System.out.println();
+
+        
+
+
     }
+
+}
+
+class Vehicule {
+    void start() {
+        System.out.println("VROOOOM");
+    }
+}
+
+class Voiture extends Vehicule {
+
+    void start() {
+        super.start();
+        allumer();
+    }
+    void allumer() {
+        System.out.println("Allumage des feux");
+    }
+}
+
+class Bateau extends Vehicule {
 
 }
 

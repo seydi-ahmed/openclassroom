@@ -1,5 +1,7 @@
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -161,19 +163,41 @@ public class Apprenez {
         System.out.println();
 
         try {
-            FileReader fileReader = new FileReader("../roadmap.md");
+            
+            FileReader fileReader = new FileReader("../Readme.md");
             BufferedReader reader = new BufferedReader(fileReader);
             String line = reader.readLine();
 
-            while (line != null) {
+            while (line != null){
                 System.out.println(line);
                 line = reader.readLine();
             }
 
             reader.close();
+
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        System.out.println();
+        System.out.println("*********************************************");
+        System.out.println();
+
+        try {
+
+            FileWriter fileWriter = new FileWriter("texte.txt");
+            BufferedWriter writer = new BufferedWriter(fileWriter);
+            writer.write("OK123");
+            writer.newLine();
+            writer.close();
+            
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        System.out.println();
+        System.out.println("*********************************************");
+        System.out.println();
         
 
     }

@@ -1,6 +1,6 @@
 git add .
 git commit -m "
-toUpperCase()
+POO
 "
 git push gitea
 git push github

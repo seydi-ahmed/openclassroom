@@ -1,6 +1,6 @@
 git add .
 git commit -m "
-écrire dans un fichier
+Model + Service
 "
 git push gitea
 git push github

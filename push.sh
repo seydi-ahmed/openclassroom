@@ -1,6 +1,6 @@
 git add .
 git commit -m "
-web application
+minimal webbapp
 "
 git push gitea
 git push github

@@ -1,6 +1,6 @@
 git add .
 git commit -m "
-H2 console
+on s'attaque au service métier
 "
 git push gitea
 git push github

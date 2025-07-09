@@ -1,6 +1,6 @@
 git add .
 git commit -m "
-Model + Service
+test passé avec succés
 "
 git push gitea
 git push github
